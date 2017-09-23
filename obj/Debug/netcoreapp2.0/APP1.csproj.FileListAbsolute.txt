@@ -1,0 +1,11 @@
+C:\Users\A.THOMASSINE\Desktop\Sherbrooke\APP1\Projet\APP1\APP1\bin\Debug\netcoreapp2.0\APP1.deps.json
+C:\Users\A.THOMASSINE\Desktop\Sherbrooke\APP1\Projet\APP1\APP1\bin\Debug\netcoreapp2.0\APP1.runtimeconfig.json
+C:\Users\A.THOMASSINE\Desktop\Sherbrooke\APP1\Projet\APP1\APP1\bin\Debug\netcoreapp2.0\APP1.runtimeconfig.dev.json
+C:\Users\A.THOMASSINE\Desktop\Sherbrooke\APP1\Projet\APP1\APP1\bin\Debug\netcoreapp2.0\APP1.dll
+C:\Users\A.THOMASSINE\Desktop\Sherbrooke\APP1\Projet\APP1\APP1\bin\Debug\netcoreapp2.0\APP1.pdb
+C:\Users\A.THOMASSINE\Desktop\Sherbrooke\APP1\Projet\APP1\APP1\obj\Debug\netcoreapp2.0\APP1.csprojResolveAssemblyReference.cache
+C:\Users\A.THOMASSINE\Desktop\Sherbrooke\APP1\Projet\APP1\APP1\obj\Debug\netcoreapp2.0\APP1.csproj.CoreCompileInputs.cache
+C:\Users\A.THOMASSINE\Desktop\Sherbrooke\APP1\Projet\APP1\APP1\obj\Debug\netcoreapp2.0\APP1.AssemblyInfoInputs.cache
+C:\Users\A.THOMASSINE\Desktop\Sherbrooke\APP1\Projet\APP1\APP1\obj\Debug\netcoreapp2.0\APP1.AssemblyInfo.cs
+C:\Users\A.THOMASSINE\Desktop\Sherbrooke\APP1\Projet\APP1\APP1\obj\Debug\netcoreapp2.0\APP1.dll
+C:\Users\A.THOMASSINE\Desktop\Sherbrooke\APP1\Projet\APP1\APP1\obj\Debug\netcoreapp2.0\APP1.pdb
