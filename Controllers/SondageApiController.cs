@@ -24,20 +24,36 @@ namespace SondageApi.Controllers
 
         // GET api/sondages
         [HttpGet]
-        public IActionResult<string> Get()
+        public IActionResult GetSondageAvailable()
         {
-            return new string[] { "Quel sondage choisissez vous ?", "1", "2" };
-        }
-
-        [HttpGet("{id}", Name = "GetSondage")]
-        public IActionResult GetSondageById(int id)
-        {
+            String answer = null;
             var dbSondage = _context.SimpleSondageDAOs.FirstOrDefault(t => t.Id == 1);
             if (dbSondage == null)
             {
                 return NotFound();
             }
-            return new ObjectResult(dbSondage);
+            
+            foreach(Poll sondage in dbSondage.GetAvailablePolls())
+            {
+                answer = answer + "Sondage numéro : " + sondage.Id + Environment.NewLine + "Description : " + sondage.Description + Environment.NewLine;
+            }
+            return new ObjectResult(answer);
+        }
+
+        [HttpGet("{PollId}/{QId}", Name = "GetSondage")]
+        public IActionResult GetSondageById(int PollId, int QId)
+        {
+            String answer = null;
+            var dbSondage = _context.SimpleSondageDAOs.FirstOrDefault(t => t.Id == 1);
+            if (dbSondage == null)
+            {
+                return NotFound();
+            }
+
+            PollQuestion question = dbSondage.GetNextQuestion(PollId, QId);
+            //foreach(PollQuestion question in dbSondage.GetNextQuestion(PollId, QId))
+            answer = "Sondage numéro : " + question.PollId + Environment.NewLine + "Question numéro : " + question.QuestionId + Environment.NewLine + question.Text + Environment.NewLine;
+            return new ObjectResult(answer);
         }
 
        
