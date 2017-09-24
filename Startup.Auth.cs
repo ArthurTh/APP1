@@ -55,7 +55,7 @@ namespace Blog.TokenAuthGettingStarted
                 TokenValidationParameters = tokenValidationParameters
             });
 
-            app.UseCookieAuthentication(new CookieAuthenticationOptions
+            /*app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AutomaticAuthenticate = true,
                 AutomaticChallenge = true,
@@ -64,7 +64,7 @@ namespace Blog.TokenAuthGettingStarted
                 TicketDataFormat = new CustomJwtDataFormat(
                     SecurityAlgorithms.HmacSha256,
                     tokenValidationParameters)
-            });
+            });*/
 
             app.UseMiddleware<TokenProviderMiddleware>(Options.Create(tokenProviderOptions));
         }
