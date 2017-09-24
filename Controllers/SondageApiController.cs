@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SondageApi.Model;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SondageApi.Controllers
 {
@@ -23,6 +24,7 @@ namespace SondageApi.Controllers
         }
 
         // GET api/sondages
+        [Authorize]
         [HttpGet]
         public IActionResult GetSondageAvailable()
         {
@@ -40,6 +42,7 @@ namespace SondageApi.Controllers
             return new ObjectResult(answer);
         }
 
+        [Authorize]
         [HttpGet("{PollId}/{QId}", Name = "GetSondage")]
         public IActionResult GetSondageById(int PollId, int QId)
         {
