@@ -1,0 +1,15 @@
+
+.vs/ProjectSettings.json
+*.json
+*.sln
+*.sqlite
+.vs/APP1/v15/.suo
+*.ide
+*.props
+*.cache
+*.cache
+*.cs
+*.json
+*.json
+obj/project.assets.json
+obj/APP1.csproj.nuget.g.props

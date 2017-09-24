@@ -12534,7 +12534,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\A.THOMASSINE\\.nuget\\packages\\": {},
+    "C:\\Users\\Mekki\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -12543,17 +12543,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\A.THOMASSINE\\Desktop\\Sherbrooke\\APP1\\Projet\\APP1\\APP1\\APP1.csproj",
+      "projectUniqueName": "C:\\Users\\Mekki\\Documents\\GitHub\\APP1\\APP1.csproj",
       "projectName": "APP1",
-      "projectPath": "C:\\Users\\A.THOMASSINE\\Desktop\\Sherbrooke\\APP1\\Projet\\APP1\\APP1\\APP1.csproj",
-      "packagesPath": "C:\\Users\\A.THOMASSINE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A.THOMASSINE\\Desktop\\Sherbrooke\\APP1\\Projet\\APP1\\APP1\\obj\\",
+      "projectPath": "C:\\Users\\Mekki\\Documents\\GitHub\\APP1\\APP1.csproj",
+      "packagesPath": "C:\\Users\\Mekki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mekki\\Documents\\GitHub\\APP1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\A.THOMASSINE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mekki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
