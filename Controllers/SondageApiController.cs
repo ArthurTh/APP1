@@ -24,11 +24,11 @@ namespace SondageApi.Controllers
         }
 
         // GET api/sondages
-        [Authorize]
+        
         [HttpGet]
         public IActionResult GetSondageAvailable()
         {
-            String answer = null;
+            String result = null;
             var dbSondage = _context.SimpleSondageDAOs.FirstOrDefault(t => t.Id == 1);
             if (dbSondage == null)
             {
@@ -37,12 +37,14 @@ namespace SondageApi.Controllers
             
             foreach(Poll sondage in dbSondage.GetAvailablePolls())
             {
-                answer = answer + "Sondage numéro : " + sondage.Id + Environment.NewLine + "Description : " + sondage.Description + Environment.NewLine;
+                result = result + "Sondage numéro : " + sondage.Id 
+                    + Environment.NewLine + "Description : " + sondage.Description 
+                    + Environment.NewLine;
             }
-            return new ObjectResult(answer);
+            return new ObjectResult(result);
         }
 
-        [Authorize]
+        
         [HttpGet("{PollId}/{QId}", Name = "GetSondage")]
         public IActionResult GetSondageById(int PollId, int QId)
         {
@@ -55,7 +57,10 @@ namespace SondageApi.Controllers
 
             PollQuestion question = dbSondage.GetNextQuestion(PollId, QId);
             //foreach(PollQuestion question in dbSondage.GetNextQuestion(PollId, QId))
-            answer = "Sondage numéro : " + question.PollId + Environment.NewLine + "Question numéro : " + question.QuestionId + Environment.NewLine + question.Text + Environment.NewLine;
+            answer = "Sondage numéro : " + question.PollId 
+                + Environment.NewLine + "Question numéro : " + question.QuestionId 
+                + Environment.NewLine + question.Text 
+                + Environment.NewLine;
             return new ObjectResult(answer);
         }
 
