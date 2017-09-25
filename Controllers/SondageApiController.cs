@@ -26,6 +26,7 @@ namespace SondageApi.Controllers
         public readonly ISondageDAO sondage = new SimpleSondageDAO();
 
         // GET api/sondages
+        [Authorize]
         [HttpGet]
         public IActionResult GetSondageAvailable()
         {
@@ -49,7 +50,7 @@ namespace SondageApi.Controllers
                                                                                                 return new ObjectResult(result);*/
         }
 
-        
+        [Authorize]
         [HttpGet("{PollId}/{QId}", Name = "GetSondage")]
         public IActionResult GetSondageById(int PollId, int QId)
         {
@@ -70,6 +71,7 @@ namespace SondageApi.Controllers
                                                                                                 return new ObjectResult(answer);*/
         }
 
+        [Authorize]
         [HttpPost]
         public IActionResult PostAnswer([FromBody]PollQuestion answer)
         {
