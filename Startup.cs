@@ -1,21 +1,15 @@
 ﻿using System;
 using System.Text;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using SondageApi.Model;
 using Microsoft.IdentityModel.Tokens;
 using Blog.TokenAuthGettingStarted.CustomTokenProvider;
 using Blog.TokenAuthGettingStarted.CustomTokenAuthProvider;
 
-
+// Implémentation de la collection JwtToken
 namespace Blog.TokenAuthGettingStarted
 {
     public partial class Startup
